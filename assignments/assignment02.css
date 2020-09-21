@@ -1,5 +1,37 @@
 /* --- put your css here --- */ 
-
+body {
+  background-color: skyblue;
+}
+#igottabeme {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.classy {
+    margin-left: 10px;
+}
+div {
+    margin-bottom: 50px;
+}
+span {
+    width: 100px;
+    height: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    background: yellow;
+}
+.a {
+    display: inline;
+}
+.b {
+    display: table;
+}
+.c {
+    display: inline-block;
+}
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
