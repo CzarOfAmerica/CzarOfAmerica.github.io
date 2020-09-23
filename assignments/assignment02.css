@@ -45,20 +45,16 @@ span {
     bottom: 150px;
 }
 /*8 - move cat image positions*/
-.catleft {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-.catright {
+.cat {
     position: fixed;
-     bottom: 0;
-     right: 0;  
+    bottom: 0;
+    right: 0;  
+    z-index: +1;
 }
 /*10 - use relative and absolute positions to change location of the bird*/
 .birddiv {
     position: relative;
+    background-color: orange;
     
 }
 .bird {
@@ -68,10 +64,9 @@ span {
 }
 /*11 - make changes to the nav bar*/
 nav{
-    position: fixed;
-    z-index: +1;
-    left: 0px;
-    top: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: rgb(0,255,0);opacity:0.9;
     padding: 5px;
     font-size: 20px;
