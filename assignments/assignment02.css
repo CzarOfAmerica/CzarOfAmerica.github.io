@@ -1,16 +1,21 @@
 /* --- put your css here --- */ 
+/*Number 2 - change background color*/
 body {
   background-color: skyblue;
 }
+/*3- Change font*/
 #igottabeme {
     font-family: Arial, Helvetica, sans-serif;
 }
+/*4- change left margin*/
 .classy {
     margin-left: 10px;
 }
+/*5 - bottom 50px of margin*/
 div {
     margin-bottom: 50px;
 }
+/* 6 - change span elements*/
 span {
     width: 100px;
     height: 50px;
@@ -23,6 +28,7 @@ span {
     border-color: blue;
     background: yellow;
 }
+/*7 - set display properties for certian span elements*/
 .a {
     display: inline;
 }
@@ -32,8 +38,48 @@ span {
 .c {
     display: inline-block;
 }
+/*9 - change dog location*/
+.dog {
+    position: relative;
+    right: 5px;
+    bottom: 150px;
+}
+/*8 - move cat image positions*/
+.catleft {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.catright {
+    position: fixed;
+     bottom: 0;
+     right: 0;  
+}
+/*10 - use relative and absolute positions to change location of the bird*/
+.birddiv {
+    position: relative;
+    
+}
+.bird {
+   position: absolute;
+   left: 250px;
+   bottom: 50px;  
+}
+/*11 - make changes to the nav bar*/
+nav{
+    position: fixed;
+    z-index: +1;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(0,255,0);opacity:0.9;
+    padding: 5px;
+    font-size: 20px;
+}
+
 
 /* --- pre-existing css --- */
+/*12 - added pre-existing css elements*/
 .stripey tr:nth-child(even) {
   background-color: gray;
 }
@@ -50,6 +96,7 @@ span {
 .rightey td {
   text-align: right;
 }
+/*13 - added pre-existing css elements*/
 input[type="text"].pinkey:focus {
   background-color: pink;
 }
