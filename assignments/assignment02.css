@@ -41,7 +41,7 @@ span {
 /*9 - change dog location*/
 .dog {
     position: relative;
-    right: 5px;
+    right: 50px;
     bottom: 150px;
 }
 /*8 - move cat image positions*/
