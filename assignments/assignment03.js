@@ -7,11 +7,11 @@ elem[1].children[4].children[0].onclick = function() {
 };
 // function - button
 elem[1].children[4].children[1].onclick = function() {
-    subt1(elem[1], elem[19]);
+    sub1(elem[1], elem[19]);
 };
 //function C button
 elem[1].children[4].children[2].onclick = function() {
-    clearrow(elem[1], elem[19]);
+    clearBtn(elem[1], elem[19]);
 };
 
 
@@ -24,11 +24,11 @@ elem[2].children[4].children[0].onclick = function() {
 };
 //  - button
 elem[2].children[4].children[1].onclick = function() {
-    subt1(elem[2], elem[19]);
+    sub1(elem[2], elem[19]);
 };
 //  C button
 elem[2].children[4].children[2].onclick = function() {
-    clearrow(elem[2], elem[19]);
+    clearBtn(elem[2], elem[19]);
 };
 
 
@@ -41,11 +41,11 @@ elem[3].children[4].children[0].onclick = function() {
 };
 //- button
 elem[3].children[4].children[1].onclick = function() {
-    subt1(elem[3], elem[19]);
+    sub1(elem[3], elem[19]);
 };
 //C button
 elem[3].children[4].children[2].onclick = function() {
-    clearrow(elem[3], elem[19]);
+    clearBtn(elem[3], elem[19]);
 };
 
 
@@ -59,11 +59,11 @@ elem[4].children[4].children[0].onclick = function() {
 };
 //- button
 elem[4].children[4].children[1].onclick = function() {
-    subt1(elem[4], elem[19]);
+    sub1(elem[4], elem[19]);
 };
 //C button
 elem[4].children[4].children[2].onclick = function() {
-    clearrow(elem[4], elem[19]);
+    clearBtn(elem[4], elem[19]);
 };
 
 
@@ -77,11 +77,11 @@ elem[5].children[4].children[0].onclick = function() {
 };
 //- button
 elem[5].children[4].children[1].onclick = function() {
-    subt1(elem[5], elem[19]);
+    sub1(elem[5], elem[19]);
 };
 //C button
 elem[5].children[4].children[2].onclick = function() {
-    clearrow(elem[5], elem[19]);
+    clearBtn(elem[5], elem[19]);
 };
 
 
@@ -95,11 +95,11 @@ elem[6].children[4].children[0].onclick = function() {
 };
 //- button
 elem[6].children[4].children[1].onclick = function() {
-    subt1(elem[6], elem[19]);
+    sub1(elem[6], elem[19]);
 };
 //C button
 elem[6].children[4].children[2].onclick = function() {
-    clearrow(elem[6], elem[19]);
+    clearBtn(elem[6], elem[19]);
 };
 
 
@@ -113,11 +113,11 @@ elem[7].children[4].children[0].onclick = function() {
 };
 //- button
 elem[7].children[4].children[1].onclick = function() {
-    subt1(elem[7], elem[19]);
+    sub1(elem[7], elem[19]);
 };
 //C button
 elem[7].children[4].children[2].onclick = function() {
-    clearrow(elem[7], elem[19]);
+    clearBtn(elem[7], elem[19]);
 };
 
 
@@ -131,11 +131,11 @@ elem[8].children[4].children[0].onclick = function() {
 };
 //- button
 elem[8].children[4].children[1].onclick = function() {
-    subt1(elem[8], elem[19]);
+    sub1(elem[8], elem[19]);
 };
 //C button
 elem[8].children[4].children[2].onclick = function() {
-    clearrow(elem[8], elem[19]);
+    clearBtn(elem[8], elem[19]);
 };
 
 
@@ -148,11 +148,11 @@ elem[9].children[4].children[0].onclick = function() {
 };
 //- button
 elem[9].children[4].children[1].onclick = function() {
-    subt1(elem[9], elem[19]);
+    sub1(elem[9], elem[19]);
 };
 //C button
 elem[9].children[4].children[2].onclick = function() {
-    clearrow(elem[9], elem[19]);
+    clearBtn(elem[9], elem[19]);
 };
 
 
@@ -166,11 +166,11 @@ elem[10].children[4].children[0].onclick = function() {
 };
 //- button
 elem[10].children[4].children[1].onclick = function() {
-    subt1(elem[10], elem[19]);
+    sub1(elem[10], elem[19]);
 };
 //C button
 elem[10].children[4].children[2].onclick = function() {
-    clearrow(elem[10], elem[19]);
+    clearBtn(elem[10], elem[19]);
 };
 
 
@@ -184,11 +184,11 @@ elem[11].children[4].children[0].onclick = function() {
 };
 //- button
 elem[11].children[4].children[1].onclick = function() {
-    subt1(elem[11], elem[19]);
+    sub1(elem[11], elem[19]);
 };
 //C button
 elem[11].children[4].children[2].onclick = function() {
-    clearrow(elem[11], elem[19]);
+    clearBtn(elem[11], elem[19]);
 };
 
 
@@ -202,11 +202,11 @@ elem[12].children[4].children[0].onclick = function() {
 };
 //- button
 elem[12].children[4].children[1].onclick = function() {
-    subt1(elem[12], elem[19]);
+    sub1(elem[12], elem[19]);
 };
 //C button
 elem[12].children[4].children[2].onclick = function() {
-    clearrow(elem[12], elem[19]);
+    clearBtn(elem[12], elem[19]);
 };
 
 
@@ -220,11 +220,11 @@ elem[13].children[4].children[0].onclick = function() {
 };
 //- button
 elem[13].children[4].children[1].onclick = function() {
-    subt1(elem[13], elem[19]);
+    sub1(elem[13], elem[19]);
 };
 //C button
 elem[13].children[4].children[2].onclick = function() {
-    clearrow(elem[13], elem[19]);
+    clearBtn(elem[13], elem[19]);
 };
 
 
@@ -238,11 +238,11 @@ elem[14].children[4].children[0].onclick = function() {
 };
 //- button
 elem[14].children[4].children[1].onclick = function() {
-    subt1(elem[14], elem[19]);
+    sub1(elem[14], elem[19]);
 };
 //C button
 elem[14].children[4].children[2].onclick = function() {
-    clearrow(elem[14], elem[19]);
+    clearBtn(elem[14], elem[19]);
 };
 
 
@@ -256,11 +256,11 @@ elem[15].children[4].children[0].onclick = function() {
 };
 //- button
 elem[15].children[4].children[1].onclick = function() {
-    subt1(elem[15], elem[19]);
+    sub1(elem[15], elem[19]);
 };
 //C button
 elem[15].children[4].children[2].onclick = function() {
-    clearrow(elem[15], elem[19]);
+    clearBtn(elem[15], elem[19]);
 };
 
 
@@ -273,11 +273,11 @@ elem[16].children[4].children[0].onclick = function() {
 };
 //- button
 elem[16].children[4].children[1].onclick = function() {
-    subt1(elem[16], elem[19]);
+    sub1(elem[16], elem[19]);
 };
 //C button
 elem[16].children[4].children[2].onclick = function() {
-    clearrow(elem[16], elem[19]);
+    clearBtn(elem[16], elem[19]);
 };
 
 
@@ -291,11 +291,11 @@ elem[17].children[4].children[0].onclick = function() {
 };
 //- button
 elem[17].children[4].children[1].onclick = function() {
-    subt1(elem[17], elem[19]);
+    sub1(elem[17], elem[19]);
 };
 //C button
 elem[17].children[4].children[2].onclick = function() {
-    clearrow(elem[17], elem[19]);
+    clearBtn(elem[17], elem[19]);
 };
 
 
@@ -309,11 +309,11 @@ elem[18].children[4].children[0].onclick = function() {
 };
 //C button
 elem[18].children[4].children[1].onclick = function() {
-    subt1(elem[18], elem[19]);
+    sub1(elem[18], elem[19]);
 };
 //C button
 elem[18].children[4].children[2].onclick = function() {
-    clearrow(elem[18], elem[19]);
+    clearBtn(elem[18], elem[19]);
 };
 
 
@@ -369,7 +369,7 @@ function add1(elem, elem19) {
 
 
 //score calculations
-function subt1(elem, elem19) { 
+function sub1(elem, elem19) { 
     if (elem.children[2].innerHTML > "0") { 
         let currentScore = elem.children[2].innerHTML; 
         currentScore = Number.parseInt(currentScore); 
@@ -390,16 +390,16 @@ function subt1(elem, elem19) {
 
 
 //clearing rows using C button
-function clearrow(elem, elem19) { 
-    let curscore = elem.children[2].innerHTML;
-    let curover = elem.children[3].innerHTML;
-    if (curscore != "-") { 
-        elem19.children[2].innerHTML = scoreTotal - curscore; 
-        scoreTotal = scoreTotal - curscore; 
+function clearBtn(elem, elem19) { 
+    let currentScore = elem.children[2].innerHTML;
+    let currentOver = elem.children[3].innerHTML;
+    if (currentScore != "-") { 
+        elem19.children[2].innerHTML = scoreTotal - currentScore; 
+        scoreTotal = scoreTotal - currentScore; 
     }
-    if (curover != "-") { 
-        elem19.children[3].innerHTML = totalOver - curover; 
-        totalOver = totalOver - curover; 
+    if (currentOver != "-") { 
+        elem19.children[3].innerHTML = totalOver - currentOver; 
+        totalOver = totalOver - currentOver; 
     }
     elem.children[2].innerHTML = "-"; 
     elem.children[3].innerHTML = "-"; 
