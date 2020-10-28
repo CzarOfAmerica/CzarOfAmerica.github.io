@@ -1,8 +1,6 @@
 /* -------------------------------
 Functions in this app:
-
 clubDistanceList.html
-
   loadClubDistances()
   appendTableRows()
   displayClubEntry()
@@ -17,11 +15,9 @@ clubEntry.html
   cancelClub()
   
 clubDistanceEntry.html
-
   populateStatsTable()
   appendTapEntryButtons()
     updateStats()
-
 --------------------------------- */
 
 
@@ -82,9 +78,9 @@ function appendTableRows() {
 function displayClubEntry() {
 	window.location.href = "clubEntry.html"; 
 }
-
 // navigate to "Distance Entry" screen (from one of the club "+" buttons)
 function displayClubDistanceEntryForm(c) {
+	let forundoing = c;
 	localStorage.setItem("club", c); // save chosen club
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
@@ -92,6 +88,24 @@ function displayClubDistanceEntryForm(c) {
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
         // your code here !
+	let tblbody = document.getElementById('clubTable').children[0]; 
+	// create 2d global array, called "clubs" throughout app
+	// columns - 0: sortPosition, 1: clubAbbrev, 2: clubName, 
+	// 3: avgDist, 4: minDist, 5: maxDist, 6: numOfShots, 
+	// 7: loft/degrees, 8: typical/men, 9: typical/women
+	
+	if(displayClubDistanceEntryForm.forundoing==0){
+		let clubs = [
+			[ 199, "Dr",  "Driver",   0, 0, 0, 0, 10.5, 230, 200]
+		];	
+	}
+	// store the array in local storage
+	let str = JSON.stringify(clubs);
+	localStorage.setItem("clubs", str);
+	// and refresh screen
+	window.location.href = "clubDistanceList.html"; 
+	
+	
 }
 
 // create a new (default) "clubs" array
@@ -128,7 +142,8 @@ function resetAllClubDistances() {
 // navigate to "About" screen
 function displayAbout() {
 	// your code here
-	// window.location.href = "clubAbout.html";
+	alert("ClubMeNow version 1.0.0");
+
 }
 
 // navigate to "Penalty Info" screen
