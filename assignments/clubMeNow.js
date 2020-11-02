@@ -81,6 +81,7 @@ function displayClubEntry() {
 // navigate to "Distance Entry" screen (from one of the club "+" buttons)
 function displayClubDistanceEntryForm(c) {
 	let forundoing = c;
+	forundoing = undoLastShot.previous;
 	localStorage.setItem("club", c); // save chosen club
 	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
@@ -89,6 +90,11 @@ function displayClubDistanceEntryForm(c) {
 function undoLastShot() {
         // your code here !
 	let tblbody = document.getElementById('clubTable').children[0]; 
+	let previous=0;
+		tblbody.children[0].children[1].children[0].innerHTML="0";
+		tblbody.children[0].children[1].children[1].innerHTML="0";	
+	
+	
 	// create 2d global array, called "clubs" throughout app
 	// columns - 0: sortPosition, 1: clubAbbrev, 2: clubName, 
 	// 3: avgDist, 4: minDist, 5: maxDist, 6: numOfShots, 
