@@ -87,31 +87,14 @@ function displayClubDistanceEntryForm(c) {
 }
 
 // replace the current "clubs" array with the previous one
-function undoLastShot() {
-        // your code here !
-	let tblbody = document.getElementById('clubTable').children[0]; 
-	let previous=0;
-		tblbody.children[0].children[1].children[0].innerHTML="0";
-		tblbody.children[0].children[1].children[1].innerHTML="0";	
-	
-	
-	// create 2d global array, called "clubs" throughout app
-	// columns - 0: sortPosition, 1: clubAbbrev, 2: clubName, 
-	// 3: avgDist, 4: minDist, 5: maxDist, 6: numOfShots, 
-	// 7: loft/degrees, 8: typical/men, 9: typical/women
-	
-	if(displayClubDistanceEntryForm.forundoing==0){
-		let clubs = [
-			[ 199, "Dr",  "Driver",   0, 0, 0, 0, 10.5, 230, 200]
-		];	
-	}
-	// store the array in local storage
-	let str = JSON.stringify(clubs);
-	localStorage.setItem("clubs", str);
-	// and refresh screen
+function undoLastShot()  {
+	if (localStorage.getItem("clubsUndo")) {
+        let clubsNew = localStorage.getItem("clubsUndo");
+		let clubsOld = localStorage.getItem("clubs");
+		localStorage.setItem("clubsUndo", clubsOld);
+        localStorage.setItem("clubs", clubsNew);
+	}	
 	window.location.href = "clubDistanceList.html"; 
-	
-	
 }
 
 // create a new (default) "clubs" array
