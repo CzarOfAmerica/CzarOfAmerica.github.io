@@ -30,6 +30,10 @@ var chartData = {
       label: 'oranges',
       data: [2, 29, 5, 5, 2, 3, 10],
       backgroundColor: "rgba(255,140,0,0.4)"
+    }, {      
+      label: "alpha",
+      data: [1,2,3,4,5,6,7],
+      backgroundColor: "rgba(255,140,0,0,.4)"   
     }]
   },
   options: {
@@ -43,9 +47,13 @@ var chartData = {
           // logarithmic scale ignores maxTicksLimit
           maxTicksLimit: 11,
           callback: function(label, index, labels) {
-            return (   label/1000 > 9 
+            return (   label/1000 > 999999
+                    || label/1000 == 10000
+                    || label/1000 == 1000
+                    || label/1000 == 100
+                    || label/1000 == 10
                     || label/1000 == 1 
-                    || label/1000 == 0.1 
+                    || label/1000 == 0.1
                     || label/1000 == 0.01) 
               ? label/1000+'k' :  "";
           }
@@ -78,10 +86,6 @@ function loadContent() {
       
       covidJson = this.responseText;
       covidJsObj = JSON.parse(covidJson);
-      
-      
-      
-      //initialize empty array of objects
       newConfirmedOver1000 = [];
       
 	    
@@ -94,8 +98,8 @@ function loadContent() {
             "NewDeaths": c.NewDeaths,
             "TotalConfirmed": c.TotalConfirmed,
             "TotalDeaths":c.TotalDeaths,
-            "Population":populations[c.slug],
-            "TotalConfirmedPer100000":100000*c.TotalConfirmed/populations[c.slug]
+            "Populations":populations[c.slug],
+            "TotalConfirmedPer100000":100000*c.TotalConfirmed/populations[c.Slug]
           });
         }
       }
@@ -106,21 +110,24 @@ function loadContent() {
         = "rgba(100,100,100,0.4)"; // gray
       chartData.data.datasets[1].backgroundColor 
         = "rgba(255,0,0,0.4)"; // red
+      chartData.data.datasets[2].backgroundColor="rgba(0,0,255,.4)";
       chartData.data.datasets[0].label  
-        = 'new cases';
+        = 'Total Confirmed';
       chartData.data.datasets[1].label  
-        = 'new deaths';
+        = 'Total Deaths';
+      chartData.data.datasets[2].label='Total Confirmed Per 100000';
       chartData.data.labels  
         = newConfirmedOver1000.map( (x) => x.Slug );
       chartData.data.datasets[0].data  
         = newConfirmedOver1000.map( 
-          (x) => x.NewConfirmed );
+          (x) => x.TotalConfirmed );
       chartData.data.datasets[1].data  
         = newConfirmedOver1000.map( 
-          (x) => x.NewDeaths );
+          (x) => x.TotalDeaths );
+      chartData.data.datasets[2].data=newConfirmedOver1000.map((x)=>x.TotalConfirmedPer100000);
       chartData.options.title.text 
-        = "Covid 19 Hotspots (Today: "  + 
-          dayjs().format("YYYY-MM-DD") + ")" ;
+        = "COVID-19 Cases: (" + 
+        dayjs().format("MM-DD-YYYY") + ")" ;
       myChart = new Chart(ctx, chartData); 
 
     } // end if
@@ -134,7 +141,7 @@ function loadContent() {
 
 // data from: https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population
 var populations = {
-'china' : 1405137440,
+  'china' : 1405137440,
 'india' : 1369152434,
 'united-states' : 330578332,
 'indonesia' : 269603400,
